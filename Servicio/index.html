@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Servicio</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <img src="img/logo/marca.jpg" alt="Ralli Car Audio">
+
+            <div class="dropdown">
+                <img class=" foto1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="img/admi/administrador.png" >
+                <ul class="dropdown-menu">
+                <a href="file:///C:/Users/juany/OneDrive/Documentos/RallyCarAudio2/Dasboard/index.html"> <li><button class=" dropdown-item" type="button">Salir</button></li></a> 
+                </ul>
+              </div>
+        </header>
+
+        <article>
+            <br><br>
+            <h2 class="h2">Servicio</h2>
+
+                <form class="formulario1">
+                    <div class="mb-3">
+                        <label  for="exampleInputEmail1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label  for="exampleInputEmail1" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label  for="exampleInputEmail1" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <label for="inputZip" class="form-label">Forma de pago</label>
+                    <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
+                       <option selected disabled hidden value="" >Seleciona la Forma de pago</option>
+                       <option value="1">Contraentrega</option>
+                    </select>
+
+                    <label for="inputZip" class="form-label">Servicio Deseado</label>
+                    <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
+                       <option selected disabled hidden value="" >Seleciona el Servicio</option>
+                       <option value="1">Mantenimiento</option>
+                       <option value="2">Instlacion</option>
+                    </select>
+
+                    <label for="inputZip" class="form-label">Metodo de pago</label>
+                    <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
+                       <option selected disabled hidden value="" >Seleciona el Metodo de Pago</option>
+                       <option value="1">Efectivo</option>
+                       <option value="2">Nequi</option>
+                       <option value="2">DaviPlata</option>
+                    </select>
+
+                    <label for="inputZip" class="form-label">Total a Pagar</label>
+                    <div class="input-group">
+                       <input class="form-control" required  aria-label="Dollar amount (with dot and two decimal places)">
+                       <span class="input-group-text">$</span>
+                       <span class="input-group-text">0.00</span>
+                    </div>
+
+                    <br>
+                    <div class="botom3">
+                      <a href="#"> <button type="submit" class="btn btn-danger" aria-required="true" >Guardar</button></a>
+                    </div>
+                </form> 
+        </article>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

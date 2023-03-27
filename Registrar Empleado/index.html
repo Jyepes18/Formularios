@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Registro de Empleado</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <img src="img/logo/marca.jpg" alt="Ralli Car Audio">
+
+            <div class="dropdown">
+                <img class=" foto1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="img/admi/administrador.png" >
+                <ul class="dropdown-menu">
+                <a href="file:///C:/Users/juany/OneDrive/Documentos/RallyCarAudio2/Dasboard/index.html"> <li><button class=" dropdown-item" type="button">Salir</button></li></a> 
+                </ul>
+              </div>
+        </header>
+
+        <article>
+            <br><br>
+            <h2 class="h2">Registrar Cliente</h2>
+
+            <form class="formulario1">
+                <label for="inputZip" class="form-label">Tipo de Documento</label>
+                <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
+                   <option selected disabled hidden value="" >Seleciona tu Documento</option>
+                   <option value="1">C.C</option>
+                   <option value="2">C.E</option>
+                </select>
+       
+
+      
+                 <div class="mb-3" aria-required="false">
+                  <label for="exampleInputEmail1" class="form-label">Documento</label>
+                  <input  class="form-control" placeholder="EJ:1011085793" required pattern="^([0-9]{1,10})$" maxlength="10" minlength="7">
+                 </div>
+        
+        
+        
+       
+                <div class="mb-3">
+                  <label  for="exampleInputEmail1" class="form-label">Nombre del Empleado</label>
+                  <input type="text" class="form-control" required>
+                </div>
+        
+        
+        
+                 <div class="mb-3">
+                  <label  for="exampleInputEmail1" class="form-label">Apellido del Empleado</label>
+                  <input type="text" class="form-control" required>
+                 </div>
+       
+
+    
+                <div class="mb-3">
+                  <label  for="exampleInputEmail1" class="form-label">Telefono</label>
+                  <input  class="form-control" required pattern="^([0-9]{1,10})$" >
+                </div>
+     
+       
+                 <div class="mb-3">
+                  <label  for="exampleInputEmail1" class="form-label">Direccion</label>
+                  <input type="text" class="form-control" required>
+                 </div>
+            
+
+     
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="email" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" required>
+                 </div>
+
+                 <label for="inputZip" class="form-label">Cargo</label>
+                 <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
+                   <option selected disabled hidden value="" >Seleciona el Cargo</option>
+                   <option value="1">Mantenimiento</option>
+                   <option value="2">Instalacion</option>
+                 </select>
+
+                 <div class="mb-3" aria-required="false">
+                    <label for="exampleInputEmail1" class="form-label">Codigo</label>
+                    <input  class="form-control" required  maxlength="5" minlength="3">
+                   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 <br>
+                <div class="botom3">
+                  <a href="#"> <button type="submit" class="btn btn-danger" aria-required="true" >Guardar</button></a>
+                </div>
+             </form>
+
+ 
+        </article>
+         
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
