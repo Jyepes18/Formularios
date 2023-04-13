@@ -17,18 +17,18 @@
             <div class="dropdown">
                 <img class=" foto1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="img/admi/administrador.png" >
                 <ul class="dropdown-menu">
-                <a href="file:///C:/Users/juany/OneDrive/Documentos/RallyCarAudio2/Dasboard/index.html"> <li><button class=" dropdown-item" type="button">Salir</button></li></a> 
+                <a href="file:///C:/Users/juany/OneDrive/Documentos/RallyCarAudio2/Dasboard/das.html"> <li><button class=" dropdown-item" type="button">Salir</button></li></a> 
                 </ul>
               </div>
         </header>
 
         <article>
             <br><br>
-            <h2 class="h2">Registrar Cliente</h2>
+            <h2 class="h2">Registrar Empleado</h2>
 
-            <form class="formulario1">
-                <label for="inputZip" class="form-label">Tipo de Documento</label>
-                <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
+            <form class="formulario1" method="post"  onsubmit=" return validar();" >
+                <label id="Tipoid" for="inputZip" class="form-label">Tipo de Documento </label>
+                <select  class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
                    <option selected disabled hidden value="" >Seleciona tu Documento</option>
                    <option value="1">C.C</option>
                    <option value="2">C.E</option>
@@ -36,9 +36,9 @@
        
 
       
-                 <div class="mb-3" aria-required="false">
+                 <div class="mb-3" >
                   <label for="exampleInputEmail1" class="form-label">Documento</label>
-                  <input  class="form-control" placeholder="EJ:1011085793" required pattern="^([0-9]{1,10})$" maxlength="10" minlength="7">
+                  <input id="Documento" type="number"  class="form-control" placeholder="EJ:1011085793"  required>
                  </div>
         
         
@@ -46,50 +46,52 @@
        
                 <div class="mb-3">
                   <label  for="exampleInputEmail1" class="form-label">Nombre del Empleado</label>
-                  <input type="text" class="form-control" required>
+                  <input id="Nombre" type="text" class="form-control" required >
                 </div>
         
         
         
                  <div class="mb-3">
                   <label  for="exampleInputEmail1" class="form-label">Apellido del Empleado</label>
-                  <input type="text" class="form-control" required>
+                  <input id="Apellido" type="text" class="form-control" required >
                  </div>
        
 
     
                 <div class="mb-3">
                   <label  for="exampleInputEmail1" class="form-label">Telefono</label>
-                  <input  class="form-control" required pattern="^([0-9]{1,10})$" >
+                  <input id="Telefono" type="number"  class="form-control" required  >
                 </div>
      
        
                  <div class="mb-3">
                   <label  for="exampleInputEmail1" class="form-label">Direccion</label>
-                  <input type="text" class="form-control" required>
+                  <input id="Direccion" type="text" class="form-control" required>
                  </div>
             
 
      
                 <div class="input-group flex-nowrap">
                   <span class="input-group-text" id="addon-wrapping">@</span>
-                  <input type="email" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" required>
+                  <input id="Correo" type="email" class="form-control" placeholder="Username" required aria-label="Username" aria-describedby="addon-wrapping" >
                  </div>
 
-                 <label for="inputZip" class="form-label">Cargo</label>
-                 <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
+                 <label  id="Cargo" for="inputZip" class="form-label">Cargo</label>
+                 <select  class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required > 
                    <option selected disabled hidden value="" >Seleciona el Cargo</option>
                    <option value="1">Mantenimiento</option>
                    <option value="2">Instalacion</option>
                  </select>
 
-                 <div class="mb-3" aria-required="false">
+                 <div class="mb-3" >
                     <label for="exampleInputEmail1" class="form-label">Codigo</label>
-                    <input  class="form-control" required  maxlength="5" minlength="3">
+                    <input id="Codigo" type="text"  class="form-control" required >
                    </div>
+
                  <br>
                 <div class="botom3">
-                  <a href="#"> <button type="submit" class="btn btn-danger" aria-required="true" >Guardar</button></a>
+                  
+                  <input type="submit" class="btn btn-danger" value="Registrar" >
                 </div>
              </form>
 
@@ -98,6 +100,7 @@
          
     </div>
 
+    <script src="javas.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
 </body>

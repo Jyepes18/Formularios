@@ -17,7 +17,7 @@
             <div class="dropdown">
                 <img class=" foto1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="img/admi/administrador.png" >
                 <ul class="dropdown-menu">
-                <a href="file:///C:/Users/juany/OneDrive/Documentos/RallyCarAudio2/Dasboard/index.html"> <li><button class=" dropdown-item" type="button">Salir</button></li></a> 
+                <a href="file:///C:/Users/juany/OneDrive/Documentos/RallyCarAudio2/Dasboard/das.html"> <li><button class=" dropdown-item" type="button">Salir</button></li></a> 
                 </ul>
               </div>
         </header>
@@ -26,69 +26,70 @@
             <br><br>
             <h2 class="h2">Registrar Producto</h2>
 
-                <form class="formulario1">
+                <form class="formulario1" method="post"  onsubmit=" return validar();">
                     <div class="mb-3">
                         <label  for="exampleInputEmail1" class="form-label">Nombre del Producto</label>
-                        <input type="text" class="form-control" required>
+                        <input id="Nombre" type="text" class="form-control" required >
                       </div>
 
-                      <div class="mb-3" aria-required="false">
+                      <div class="mb-3" >
                         <label for="exampleInputEmail1" class="form-label">Codigo</label>
-                        <input  class="form-control" required  maxlength="5" minlength="3">
+                        <input id="Codigo" class="form-control" required >
                        </div>
 
-                    <label for="inputZip" class="form-label">Nombre del Proveedor</label>
-                    <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
+                    <label  for="inputZip" class="form-label">Nombre del Proveedor</label>
+                    <select  id="Proveedor" class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required > 
                       <option selected disabled hidden value="" >Seleciona el Proveedor</option>
                       <option value="1">Radios</option>
                       <option value="2">RinMax</option>
                     </select>
 
-                    <label for="inputZip" class="form-label">Precio de Compra</label>
+                    <label  for="inputZip" class="form-label">Precio de Compra</label>
                     <div class="input-group">
-                     <input class="form-control" required  aria-label="Dollar amount (with dot and two decimal places)">
+                     <input  id="Precio" type="number" class="form-control"   aria-label="Dollar amount (with dot and two decimal places)" required>
                      <span class="input-group-text">$</span>
-                     <span class="input-group-text">0.00</span>
+                     <span class="input-group-text">0.00</span>s
                     </div>
 
-                    <label for="inputZip" class="form-label">Categoria</label>
-                    <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
+                    <label  for="inputZip" class="form-label">Categoria</label>
+                    <select id="Categoria" class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required > 
                       <option selected disabled hidden value="" >Seleccione el Accesorio</option>
                       <option value="1">Radio</option>
                       <option value="2">Llanta</option>
                       <option value="3">Rin</option>
                     </select>
 
-                    <label for="inputZip" class="form-label">Precio de Venta</label>
+                    <label  for="inputZip" class="form-label">Precio de Venta</label>
                     <div class="input-group">
-                     <input class="form-control" required  aria-label="Dollar amount (with dot and two decimal places)">
+                     <input id="Venta" type="number" class="form-control"   aria-label="Dollar amount (with dot and two decimal places)" required>
                      <span class="input-group-text">$</span>
                      <span class="input-group-text">0.00</span>
                     </div>
 
-                    <label for="inputZip" class="form-label">Cantidad</label>
-                    <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
-                      <option selected >1</option>
-                      <option value="1">2</option>
-                      <option value="2">3</option>
-                      <option value="3">4</option>
+                    <label id="Cantidad" for="inputZip" class="form-label">Cantidad</label>
+                    <select id="Cantidad" class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required > 
+                      <option selected disabled hidden value="" >0</option>
+                      <option value="1" >1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
                     </select>
 
-                    <label for="inputZip" class="form-label">Tipo de Vehiculo</label>
-                    <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required> 
+                    <label  for="inputZip" class="form-label">Tipo de Vehiculo</label>
+                    <select id="Automovil" class="form-select" aria-placeholder="Digitar" aria-label="Default select example" required > 
                       <option selected disabled hidden value="" >Tipo</option>
                       <option value="1">Automovil</option>
                       <option value="2">Camioneta</option>
                       <option value="3">Micro-Bus</option>
                     </select>
 
-                    <div class="mb-3" aria-required="false">
+                    <div class="mb-3" >
                         <label for="exampleInputEmail1" class="form-label">Descripcion del Producto</label>
-                        <input type="text"  class="form-control" required  maxlength="500">
+                        <input id="Descripcion" type="text"  class="form-control"  maxlength="500" required>
                        </div>
                  <br>
                 <div class="botom3">
-                  <a href="#"> <button type="submit" class="btn btn-danger" aria-required="true" >Guardar</button></a>
+                  <input type="submit" class="btn btn-danger" value="Registrar">
                 </div>
              </form>
 
@@ -97,6 +98,7 @@
          
     </div>
 
+    <script src="java.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
 </body>
